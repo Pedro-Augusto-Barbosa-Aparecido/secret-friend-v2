@@ -7,10 +7,19 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontFamily: {
+        headerTitle: 'Just Me Again Down Here, sans-serif',
+        body: 'Istok Web, sans-serif',
+      },
+      fontSize: {
+        '5.5xl': '3.5rem',
+      },
+      colors: {
+        'naruto-blue': '#024DA1',
+        'naruto-orange': '#F05321',
+      },
+      borderRadius: {
+        button: '10px',
       },
     },
   },
