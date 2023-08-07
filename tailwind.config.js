@@ -7,12 +7,18 @@ module.exports = {
   ],
   theme: {
     extend: {
+      width: {
+        register: '37.5rem',
+      },
       fontFamily: {
         headerTitle: 'Just Me Again Down Here, sans-serif',
         body: 'Istok Web, sans-serif',
       },
       fontSize: {
         '5.5xl': '3.5rem',
+      },
+      gridTemplateColumns: {
+        register: '1fr minmax(18.75rem, 35rem)',
       },
       colors: {
         'naruto-blue': '#024DA1',
