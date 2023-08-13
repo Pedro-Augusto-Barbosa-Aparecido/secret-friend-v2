@@ -1,33 +1,57 @@
-import { Checkbox } from '@/components/Checkbox'
 import { Input } from '@/components/Input'
-
-import Link from 'next/link'
 
 export function RegisterForm() {
   return (
-    <form className="mt-10 flex w-full flex-col gap-5">
-      <Input type="email" placeholder="Email" />
-      <Input type="password" placeholder="Senha" />
+    <form action="" className="w-full">
+      <div className="flex flex-col items-start justify-start gap-3">
+        <div className="flex w-full flex-col items-start justify-start gap-1">
+          <label
+            htmlFor="name"
+            className="cursor-text font-body text-xl font-medium text-naruto-blue"
+          >
+            Nome
+          </label>
+          <Input name="name" id="name" />
+        </div>
+        <div className="flex w-full flex-col items-start justify-start gap-1">
+          <label
+            htmlFor="email"
+            className="cursor-text font-body text-xl font-medium text-naruto-blue"
+          >
+            E-mail
+          </label>
+          <Input name="email" id="email" type="email" />
+        </div>
+        <div className="flex w-full flex-col items-start justify-start gap-1">
+          <label
+            htmlFor="email_confirmation"
+            className="cursor-text font-body text-xl font-medium text-naruto-blue"
+          >
+            Confirme seu E-mail
+          </label>
+          <Input
+            name="email_confirmation"
+            id="email_confirmation"
+            type="email"
+          />
+        </div>
+        <div className="flex w-full flex-col items-start justify-start gap-1">
+          <label
+            htmlFor="password"
+            className="cursor-text font-body text-xl font-medium text-naruto-blue"
+          >
+            Senha
+          </label>
+          <Input name="password" id="password" type="password" />
+        </div>
+      </div>
 
-      <Checkbox label="Lembre-se de mim" />
-
-      <button className="w-full rounded-button bg-naruto-blue py-3 text-center text-xl font-semibold text-naruto-orange hover:text-white hover:brightness-125">
-        LOGIN
-      </button>
-
-      <Link
-        href="/forgot-password"
-        className="text-md -mt-2 font-medium hover:underline hover:brightness-110"
-      >
-        Esqueci minha senha
-      </Link>
-
-      <Link
-        href="/register"
-        className="-mt-2 w-full rounded-button py-2 text-center text-xl font-semibold text-naruto-blue hover:underline hover:brightness-125"
+      <button
+        className="mt-12 w-52 rounded-button bg-naruto-blue py-2.5 text-center text-xl font-semibold text-naruto-orange hover:bg-naruto-blue/90 hover:text-white hover:brightness-125"
+        type="submit"
       >
         Cadastrar
-      </Link>
+      </button>
     </form>
   )
 }

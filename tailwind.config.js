@@ -18,7 +18,7 @@ module.exports = {
         '5.5xl': '3.5rem',
       },
       gridTemplateColumns: {
-        register: '1fr minmax(18.75rem, 35rem)',
+        register: 'minmax(25.75rem, 50rem) 1fr minmax(18.75rem, 35rem)',
       },
       colors: {
         'naruto-blue': '#024DA1',
